@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1 class="heading">STOP WATCH     <b-icon font-scale="1.8" icon="stopwatch-fill" animation="cylon" ></b-icon> </h1>
+  <div class="content">
+    <StopWatch/>
   </div>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StopWatch from './components/Stopwatch.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StopWatch
   }
 }
 </script>
 
 <style>
+.heading{
+    color: aliceblue;
+    padding-top:120px ;
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #3a546e;
+  background-color: #151238;
+  width: 100vw;
+  height: 100vh;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 65%;
 }
 </style>
